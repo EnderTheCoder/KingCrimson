@@ -13,6 +13,7 @@ public final class KingCrimson extends JavaPlugin {
     public void onEnable() {
         Bukkit.getLogger().info("King Crimson Loaded.");
         Bukkit.dispatchCommand(Bukkit.getServer().getConsoleSender(), "gamerule randomTickSpeed 1");
+
         new SetGameTime().runTaskTimer(this, 0, 3);
     }
 

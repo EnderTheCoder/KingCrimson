@@ -12,7 +12,6 @@ public class SetGameTime extends BukkitRunnable {
     }
     @Override
     public void run() {
-
         Bukkit.getWorlds().get(0).setFullTime(++this.startTime);
     }
 }
