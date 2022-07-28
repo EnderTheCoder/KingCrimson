@@ -1,0 +1,5 @@
+name: KingCrimson
+version: '${project.version}'
+main: dev.ender.kingcrimson.KingCrimson
+api-version: 1.16
+authors: [ EnderTheCoder ]
