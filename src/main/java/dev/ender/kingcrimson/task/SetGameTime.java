@@ -5,13 +5,13 @@ import org.bukkit.scheduler.BukkitRunnable;
 
 public class SetGameTime extends BukkitRunnable {
 
-    private Long startTime;
+    public static Long currentTime;
 
     public SetGameTime() {
-        this.startTime = Bukkit.getWorlds().get(0).getFullTime();
+        currentTime = Bukkit.getWorlds().get(0).getFullTime();
     }
     @Override
     public void run() {
-        Bukkit.getWorlds().get(0).setFullTime(++this.startTime);
+        Bukkit.getWorlds().get(0).setFullTime(++currentTime);
     }
 }
